@@ -1,0 +1,14 @@
+---
+- hosts: projeto
+  remote_user: dl
+  tasks: 
+   - name: "instalando o Apache e o MYSQL"
+     apt: name={{ item }} state=present
+     with_items:
+       - openssh-server
+        
+
+
+
+
+  

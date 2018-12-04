@@ -1,0 +1,9 @@
+---
+- hosts: projeto
+  remote_user: dl
+  become_method: sudo
+  become_user: dl
+  tasks:
+    - name: "Intalando Vim"
+      apt: name=git state=present
+
